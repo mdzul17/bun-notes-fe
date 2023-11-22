@@ -11,10 +11,21 @@ import Iconify from 'src/components/iconify';
 import PostCard from '../post-card';
 import PostSort from '../post-sort';
 import PostSearch from '../post-search';
+import { useEffect, useState } from 'react';
 
 // ----------------------------------------------------------------------
 
 export default function BlogView() {
+  const [notes, setNotes] = useState([]);
+
+  const getNotes = async() => {
+    
+  }
+  
+  useEffect(() => {
+    getNotes()
+  })
+
   return (
     <Container>
       <Stack direction="row" alignItems="center" justifyContent="space-between" mb={5}>
